@@ -360,3 +360,51 @@ nav.navbar {
         width: 90%;
     }
 }
+
+.search-bar_container {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 7px rgb(0 0 0 / 20%);
+    display: flex;
+    height: 106px;
+    position: relative;
+    top: -55px;
+    width: 1047px;
+}
+
+.search-bar_inputs {
+    display: flex;
+    justify-content: space-around;
+    margin: auto 0;
+    width: 999px;
+}
+.search-bar_button  {
+    align-self: flex-end;
+}
+
+.search-bar_section1 {
+    display: flex;
+    height: 100px;
+    
+
+}
+.search-bar_section2 {
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+aside {
+    display: flex;
+    margin: auto;
+}
+
+.search-bar_inputs input, .search-bar_inputs select {
+    background: white;
+    border: 1px solid gray;
+    border-radius: 2px;
+    font-weight: var(--fw-light);
+    height: 36px;
+    padding: 10px;
+    width: 208px;
+}

@@ -1,16 +1,23 @@
 import React from "react";
-
-
+import { useNavigate } from "react-router-dom";
+import Button from "react-bootstrap/esm/Button";
 
 const Landing = () => {
+
+    let navigate = useNavigate(); 
+    const routeChange = () =>{ 
+    let path = './'; 
+    navigate(path);
+    }
+
+
     return (
         <div>
             <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container">
-                    <a class="navbar-brand" href="#">BCR</a>
-                    <button class="btn btn-success d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <Button style={{background:"none", border:"none"}} data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample navbarNav" aria-expanded="false" aria-label="Toggle navigation" className="px-4"onClick={routeChange}>
+                        <a class="navbar-brand" href="#">BCR</a>
+                    </Button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                     <div class="offcanvas-header">
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
